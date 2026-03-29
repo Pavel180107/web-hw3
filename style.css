@@ -234,3 +234,17 @@ th {
 tr:hover td {
     background: #1f2a1f;
 }
+
+
+.screenshot {
+    text-align: center;
+}
+
+.screenshot img {
+    max-width: 100%;
+    height: auto;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 5px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
