@@ -3,148 +3,45 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Этапы выполнения | Лабораторная работа №3</title>
-    <style>
-        body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background-color: #f0f2f5;
-            margin: 0;
-            padding: 20px;
-        }
-        .container {
-            max-width: 1200px;
-            margin: 0 auto;
-            background: white;
-            border-radius: 15px;
-            box-shadow: 0 5px 20px rgba(0,0,0,0.1);
-            overflow: hidden;
-        }
-        .header {
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            color: white;
-            padding: 30px;
-            text-align: center;
-        }
-        .header h1 {
-            margin: 0;
-            font-size: 2rem;
-        }
-        .content {
-            padding: 30px;
-        }
-        .step {
-            margin-bottom: 40px;
-            padding-bottom: 20px;
-            border-bottom: 1px solid #e0e0e0;
-        }
-        .step h2 {
-            color: #2c3e50;
-            border-left: 5px solid #667eea;
-            padding-left: 15px;
-            margin-top: 0;
-        }
-        .step p {
-            line-height: 1.6;
-            margin: 10px 0;
-        }
-        .screenshot {
-            text-align: center;
-            margin: 20px 0;
-        }
-        .screenshot img {
-            max-width: 100%;
-            border-radius: 8px;
-            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-            border: 1px solid #ddd;
-        }
-        .caption {
-            font-style: italic;
-            color: #7f8c8d;
-            margin-top: 8px;
-        }
-        .back-link {
-            text-align: center;
-            margin-top: 30px;
-        }
-        .back-link a {
-            display: inline-block;
-            background: #667eea;
-            color: white;
-            padding: 12px 25px;
-            text-decoration: none;
-            border-radius: 8px;
-            transition: background 0.3s;
-        }
-        .back-link a:hover {
-            background: #5a67d8;
-        }
-        code {
-            background: #f0f0f0;
-            padding: 2px 5px;
-            border-radius: 4px;
-            font-family: monospace;
-        }
-    </style>
+    <title>Этапы выполнения</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="container">
-        <div class="header">
-            <h1>📋 Этапы выполнения лабораторной работы №3</h1>
+<div class="container">
+    <h1>Этапы выполнения лабораторной №3</h1>
+
+    <div class="task">
+        <h2>1. Создание рабочего каталога</h2>
+        <div class="description">
+            <p>Создан каталог <code>~/www/hw3</code> и выполнен переход в него.</p>
         </div>
-        <div class="content">
-            <div class="step">
-                <h2>1. Подготовка каталога на сервере</h2>
-                <p>Создаём каталог <code>~/www/hw3</code> для размещения файлов лабораторной работы.</p>
-                <div class="screenshot">
-                    <img src="1.png" alt="Создание каталога hw3">
-                    <div class="caption">Скриншот 1: mkdir -p ~/www/hw3</div>
-                </div>
-            </div>
+        
+    </div>
 
-            <div class="step">
-                <h2>2. Создание базы данных и таблиц</h2>
-                <p>Подключаемся к MySQL, создаём таблицы <code>application</code>, <code>language</code>, <code>application_language</code> и заполняем справочник языков.</p>
-                <div class="screenshot">
-                    <img src="2.png" alt="Вход в MySQL">
-                    <div class="caption">Скриншот 2: mysql -u u82321 -p</div>
-                </div>
-                <div class="screenshot">
-                    <img src="3.png" alt="SQL-запросы">
-                    <div class="caption">Скриншот 3: Создание таблиц и вставка языков</div>
-                </div>
-            </div>
-
-            <div class="step">
-                <h2>3. Инициализация Git и отправка на GitHub</h2>
-                <p>На локальном компьютере создаём репозиторий, добавляем файлы (<code>index.php</code>, <code>form.php</code>, <code>style.css</code>, скриншоты) и отправляем на GitHub.</p>
-                <div class="screenshot">
-                    <img src="4.png" alt="Git push">
-                    <div class="caption">Скриншот 4: git push -u origin main</div>
-                </div>
-            </div>
-
-            <div class="step">
-                <h2>4. Клонирование репозитория на сервер</h2>
-                <p>На сервере выполняем клонирование и копируем файлы в веб-каталог.</p>
-                <div class="screenshot">
-                    <img src="5.png" alt="Клонирование">
-                    <div class="caption">Скриншот 5: git clone и cp</div>
-                </div>
-            </div>
-
-            <div class="step">
-                <h2>5. Проверка сохранённых данных</h2>
-                <p>После отправки нескольких анкет проверяем, что данные корректно записаны в таблицу <code>application</code>.</p>
-                <div class="screenshot">
-                    <img src="6.png" alt="SELECT из application">
-                    <div class="caption">Скриншот 6: Просмотр записей в БД</div>
-                </div>
-            </div>
-
-            <div class="back-link">
-                <a href="index.php">← Вернуться к форме</a>
-            </div>
+    <div class="task">
+        <h2>2. Создание базы данных и таблиц</h2>
+        <div class="description">
+            <p>Созданы таблицы <code>application</code>, <code>language</code>, <code>application_language</code>. Заполнен справочник языков.</p>
         </div>
     </div>
+
+    <div class="task">
+        <h2>3. Разработка PHP-скриптов и стилей</h2>
+        <div class="description">
+            <p>Реализованы <code>index.php</code>, <code>f.php</code>, <code>v.php</code>, <code>style.css</code> и <code>o.html</code>.</p>
+        </div>
+    </div>
+
+    <div class="task">
+        <h2>4. Тестирование и проверка</h2>
+        <div class="description">
+            <p>Проверена работа формы, сохранение данных, вывод анкет и отображение этапов.</p>
+        </div>
+    </div>
+
+    <div class="footer-links">
+        <a href="index.php">← К анкете</a>
+    </div>
+</div>
 </body>
 </html>
