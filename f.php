@@ -62,7 +62,7 @@
             <label for="languages">Любимые языки программирования * (множественный выбор)</label>
             <select id="languages" name="languages[]" multiple size="6" required>
                 <?php foreach ($languages_from_db as $lang): ?>
-                    <option value="<?= htmlspecialchars($lang) ?>" <?= in_array($lang, $form_data['languages']) ? 'selected' : '' ?»<?= htmlspecialchars($lang) ?></option>
+                    <option value="<?= htmlspecialchars($lang) ?>" <?= in_array($lang, $form_data['languages']) ? 'selected' : '' ?>> <?= htmlspecialchars($lang) ?></option>
                 <?php endforeach; ?>
             </select>
             <?php if (isset($errors['languages'])): ?><span class="field-error"><?= $errors['languages'] ?></span><?php endif; ?>
@@ -75,7 +75,7 @@
 
         <div class="form-group checkbox">
             <label>
-                <input type="checkbox" name="contract_accepted" <?= $form_data['contract_accepted'] ? 'checked' : '' ?»
+                <input type="checkbox" name="contract_accepted" <?= $form_data['contract_accepted'] ? 'checked' : '' ?>>
                 Ознакомлен с контрактом *
             </label>
             <?php if (isset($errors['contract_accepted'])): ?><span class="field-error"><?= $errors['contract_accepted'] ?></span><?php endif; ?>
