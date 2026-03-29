@@ -47,7 +47,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $form_data['contract_accepted'] = isset($_POST['contract_accepted']);
     $form_data['languages'] = $_POST['languages'] ?? [];
 
-    // Валидация (аналогично примеру, но с учётом новых стилей)
+    // Валидация 
     if (empty($form_data['full_name'])) {
         $errors['full_name'] = 'ФИО обязательно для заполнения.';
     } elseif (!preg_match('/^[а-яА-Яa-zA-Z\s]+$/u', $form_data['full_name'])) {
