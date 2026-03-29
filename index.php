@@ -182,5 +182,5 @@ if (empty($languages_from_db)) {
 }
 
 // Подключаем форму
-include 'form.php';
+include 'f.php';
 ?>
