@@ -13,7 +13,11 @@
     <div class="task">
         <h2>1. Создание рабочего каталога</h2>
         <div class="description">
-            <p>Создан каталог <code>~/www/hw3</code> и выполнен переход в него.</p>
+            <p>На сервере создан каталог <code>~/www/hw3</code> и выполнен переход в него.</p>
+            <div class="screenshot">
+                    <img src="1.png" alt="Создание каталога hw3">
+                    <div class="caption">Скриншот 1: mkdir -p ~/www/hw3</div>
+                </div>
         </div>
         
     </div>
@@ -22,23 +26,49 @@
         <h2>2. Создание базы данных и таблиц</h2>
         <div class="description">
             <p>Созданы таблицы <code>application</code>, <code>language</code>, <code>application_language</code>. Заполнен справочник языков.</p>
+            <div class="screenshot">
+                    <img src="2.png" alt="Вход в MySQL">
+                    <div class="caption">Скриншот 2: mysql -u u82321 -p</div>
+                </div>
+                <div class="screenshot">
+                    <img src="3.png" alt="SQL-запросы">
+                    <div class="caption">Скриншот 3: Создание таблиц и вставка языков</div>
+                </div>
         </div>
     </div>
 
     <div class="task">
-        <h2>3. Разработка PHP-скриптов и стилей</h2>
+        <h2>3. Инициализация Git и отправка на GitHub</h2>
         <div class="description">
-            <p>Реализованы <code>index.php</code>, <code>f.php</code>, <code>v.php</code>, <code>style.css</code> и <code>o.html</code>.</p>
+            <p>Реализованы и отправлены на git: <code>index.php</code>, <code>f.php</code>, <code>v.php</code>, <code>style.css</code> и <code>o.html</code>.</p>
+             <div class="screenshot">
+                    <img src="4.png" alt="Git push">
+                    <div class="caption">Скриншот 4: git</div>
+                </div>
         </div>
     </div>
 
     <div class="task">
-        <h2>4. Тестирование и проверка</h2>
+        <h2>4. Клонирование репозитория на сервер</h2>
         <div class="description">
-            <p>Проверена работа формы, сохранение данных, вывод анкет и отображение этапов.</p>
+            <p>На сервере выполняем клонирование и копируем файлы в веб-каталог.</p>
+            <div class="screenshot">
+                    <img src="5.png" alt="Клонирование">
+                    <div class="caption">Скриншот 5: git clone и cp</div>
+                </div>
         </div>
     </div>
 
+    <div class="task">
+        <h2>5. Проверка</h2>
+        <div class="description">
+            <p>Проверена работа формы, сохранение данных. </p>
+            <div class="screenshot">
+                    <img src="6.png" alt="SELECT из application">
+                    <div class="caption">Скриншот 6: Просмотр записей в БД</div>
+                </div>
+        </div>
+    </div>
     <div class="footer-links">
         <a href="index.php">← К анкете</a>
     </div>
